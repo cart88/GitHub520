@@ -13,6 +13,6 @@ jobs:
 
     - name: Sync with Gitee
       run: |
-        git remote add gitee https://lpz1975:880813@gitee.com/lpz1975/git-hub520.git
+        git remote add gitee https://lpz1975:880813aA@gitee.com/lpz1975/git-hub520.git
         git push --force gitee main
         
