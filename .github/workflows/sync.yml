@@ -1,0 +1,18 @@
+name: Sync with Gitee
+
+on:
+  schedule:
+    - cron: '* * * * *' # 每天午夜（UTC时间）运行
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Sync with Gitee
+      run: |
+        git remote add gitee https://lpz1975:880813@gitee.com/lpz1975/git-hub520.git
+        git push --force gitee main
+        
