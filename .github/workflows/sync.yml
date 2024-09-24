@@ -13,6 +13,7 @@ jobs:
 
     - name: Sync with Gitee
       run: |
+        git fetch --unshallow origin
         git remote add gitee https://13387731118:880813aA@gitee.com/lpz1975/git-hub520.git
         git push --force gitee main
         
